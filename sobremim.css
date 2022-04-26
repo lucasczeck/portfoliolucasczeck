@@ -1,0 +1,138 @@
+:root {
+    --primary-color: rgb(199, 199, 199);
+    --secundary-color: rgb(46, 44, 44);
+    --tertiary-color: rgb(139, 136, 136);
+    --quartenary-color: rgb(87, 87, 87);
+    --text-color: rgb(37, 37, 37);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+input#check {
+    display: none;
+}
+
+header {
+    width: 100%;
+    max-width: 1440px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo{
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav ul li a:hover {
+    background-color: var(--quartenary-color);
+    transition: backgroud-color 0,25s;
+}
+
+label[for="check"]{
+    width: 50px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.line{
+    width: 90%;
+    height: 6px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    ul.menu{
+        display: none;
+    }
+    
+    label[for="check"]{
+        display: flex;
+    }
+
+    input#check:checked ~ ul.menu{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background-color: var(--secundary-color);
+        top: 40px;
+        left: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    input#check:checked ~ ul.menu li{
+        margin: 5vh 0;
+    }
+
+    input#check:checked ~ ul.menu li a{
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profilephoto {
+    height: 250px;
+    width: 200px;
+    max-width: 80vw;    
+}
+
+.top {
+    text-align: center;
+    max-width: 80vw;
+    padding: 20px;
+    font-size: 25px;
+}
