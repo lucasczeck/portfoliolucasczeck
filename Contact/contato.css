@@ -59,7 +59,7 @@ nav ul li a:hover {
     transition: backgroud-color 0,25s;
 }
 
-label[for="check"] {
+label[for="check"]{
     width: 50px;
     height: 40px;
     display: none;
@@ -68,7 +68,7 @@ label[for="check"] {
     flex-direction: column;
 }
 
-div.line {
+div.line{
     width: 90%;
     height: 6px;
     background-color: black;
@@ -76,20 +76,20 @@ div.line {
 }
 
 @media screen and (max-width: 800px){
-    header {
+    header{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    ul.menu {
+    ul.menu{
         display: none;
     }
     
-    label[for="check"] {
+    label[for="check"]{
         display: flex;
     }
 
-    input#check:checked ~ ul.menu {
+    input#check:checked ~ ul.menu{
         height: 100%;
         width: 100%;
         display: flex;
@@ -101,11 +101,11 @@ div.line {
         justify-content: flex-start;
     }
 
-    input#check:checked ~ ul.menu li {
+    input#check:checked ~ ul.menu li{
         margin: 5vh 0;
     }
 
-    input#check:checked ~ ul.menu li a {
+    input#check:checked ~ ul.menu li a{
         color: aliceblue;
         font-size: 20px;
         font-weight: 300;
@@ -137,75 +137,110 @@ main {
     border-bottom: 2px solid black;
 }
 
-.homepage {
+.contact {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 80%;
-    min-width: 250px;
-    text-align: justify;
-    margin: 3vh;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 660px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact div {
+    padding: 50px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.contact h2 {
+    font-size: 30px;
+}
+
+.links a {
+    text-decoration: none;
     color: var(--text-color);
 }
 
-.homepage p {
-    padding-top: 5px;
-    font-size: 18px;
-    font-weight: 500;
+.links p {
+    padding: 5px;
 }
 
-.homepage h2 {
-    font-size: 30px;
-    font-weight: 900;
+.form {
+    max-width: 300px;
 }
 
-.formation {
-    padding-top: 20px;
+.form label {
+    font-weight: bold;
 }
 
-.hardskills {
-    padding-top: 20px;
+.form input {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 8px;
 }
 
-.hardskills ul {
-    list-style: none;
-    padding-top: 10px;
+.form input:hover {
+    background-color: gainsboro;
 }
 
-.level0 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 5px;
-}
-
-.level0 li {
-    padding: 0 10px;
-}
-
-.level1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 5px;
-}
-
-.level1 li {
-    padding: 0 10px;
+#mensage {
+    height: 100px
 }
 
 footer {
     width: 100%;
     border-top: 2px solid black;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 footer img {
     width: 30px;
     padding: 0 5px;
-    
+}
+
+#button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 150, 0);
+    justify-content: center;
+}
+
+#button:hover {
+    background-color: rgba(0, 85, 0, 0.897);
+    cursor: pointer;
+}
+
+.thanks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.thanks-mensage {
+    padding: 10px;
+}
+
+.thanks-mensage p {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.thanks-mensage h2 {
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bold;
 }
