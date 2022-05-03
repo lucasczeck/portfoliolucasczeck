@@ -144,6 +144,10 @@ main {
     width: 100%;
 }
 
+.port h1 {
+    padding-top: 15px;
+}
+
 .works {
     display: flex;
     justify-content: space-between;
@@ -165,6 +169,16 @@ main {
 .works div img {
     width: 100%;
     padding: 5px 0;
+}
+
+.works p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.works h2 {
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .calc {

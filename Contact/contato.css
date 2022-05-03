@@ -156,10 +156,12 @@ main {
 
 .contact p {
     font-size: 18px;
+    font-weight: 500;
 }
 
 .contact h2 {
     font-size: 30px;
+    font-weight: 900;
 }
 
 .links a {
@@ -169,6 +171,8 @@ main {
 
 .links p {
     padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .form {
@@ -177,6 +181,7 @@ main {
 
 .form label {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .form input {

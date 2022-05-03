@@ -137,6 +137,35 @@ main {
     border-bottom: 2px solid black;
 }
 
+.services {
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.services div {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    max-width: 40%;
+    
+}
+
+.services div h1 {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.services div p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 footer {
     width: 100%;
     border-top: 2px solid black;
@@ -148,9 +177,5 @@ footer {
 
 footer img {
     width: 30px;
-    padding: 0 5px;
-}
-
-.credits {
     padding: 0 5px;
 }
