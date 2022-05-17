@@ -1,0 +1,42 @@
+body {
+   background-color: #030303;
+}
+
+#pesquisa {
+    background: #a19f9f;
+    width: 320px;
+    height: 600px;
+    margin: 100px auto;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+header {
+    font-size: 15px;
+    text-align: center;
+    background-color: #dbdbdb;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1px;
+}
+
+main {
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#button {
+    width: 290px;
+    height: 75px;
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+main h2 {
+    margin: 120px auto;
+    text-align: center;
+    font-size: 40px;
+}

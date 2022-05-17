@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Pesquisa de Satisfação - Atendimento</title>
+</head>
+
+<body>
+  <div id="pesquisa">
+    <header>
+      <h1>Pesquisa de Satisfação<br>Atendimento</h1>
+    </header>
+
+    <main>
+      <form>
+        <label for="vendedor" id="venda">Qual vendedor atendeu você?</label>
+        <p>
+          <select id="vendedor" required>
+            <option disable select>Selecione</option>
+            <option>Lucas</option>
+            <option>Isabelle</option>
+            <option>Danielle</option>
+          </select>
+        </p>
+
+        <label for="nota">Qual a sua nota para o atendimento?</label>
+        <p>
+          <select id="nota" required>
+            <option disable select>Selecione</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </p>
+
+        <label for="comentario">Comente sobre o seu atendimento:</label>
+        <p><textarea id="comentario" rows="6" cols="37"></textarea></p>
+        <input type="submit" id="button" value="Enviar!">
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

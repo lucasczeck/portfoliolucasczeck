@@ -1,0 +1,3 @@
+[submodule "pesquisa"]
+    path = Portfolio/pesquisa
+    url = https://github.com/lucasczeck/portfoliolucasczeck/tree/main/Portfolio/pesquisa.git
