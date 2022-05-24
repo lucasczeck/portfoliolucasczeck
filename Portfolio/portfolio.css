@@ -110,6 +110,11 @@ div.line{
         font-size: 20px;
         font-weight: 300;
     }
+
+    .works div {
+        min-width: 80%;
+        max-width: 90%;
+    }
 }
 
 main {
@@ -156,7 +161,7 @@ main {
 }
 
 .works div {
-    max-width: 600px;
+    max-width: 50%;
     text-align: justify;
     display: flex;
     flex-direction: column;
